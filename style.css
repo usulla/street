@@ -1,0 +1,492 @@
+@font-face {
+    font-family: "Circe";
+    src: url("fonts/Circe-Regular.eot");
+    src: local("Circe"), local("fonts/Circe-Regular"), url("fonts/Circe-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/Circe-Regular.woff") format("woff"), url("fonts/Circe-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Circe";
+    src: url("fonts/Circe-ExtraLight.eot");
+    src: local("Circe ExtraLight"), local("fonts/Circe-ExtraLight"), url("fonts/Circe-ExtraLight.eot?#iefix") format("embedded-opentype"), url("fonts/Circe-ExtraLight.woff") format("woff"), url("fonts/Circe-ExtraLight.ttf") format("truetype");
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Circe";
+    src: url("fonts/Circe-Thin.eot");
+    src: local("Circe Thin"), local("fonts/Circe-Thin"), url("fonts/Circe-Thin.eot?#iefix") format("embedded-opentype"), url("fonts/Circe-Thin.woff") format("woff"), url("fonts/Circe-Thin.ttf") format("truetype");
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Circe";
+    src: url("fonts/Circe-Light.eot");
+    src: local("Circe Light"), local("fonts/Circe-Light"), url("fonts/Circe-Light.eot?#iefix") format("embedded-opentype"), url("fonts/Circe-Light.woff") format("woff"), url("fonts/Circe-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Circe";
+    src: url("fonts/Circe-Bold.eot");
+    src: local("Circe Bold"), local("fonts/Circe-Bold"), url("fonts/Circe-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/Circe-Bold.woff") format("woff"), url("fonts/Circe-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Circe";
+    src: url("fonts/Circe-ExtraBold.eot");
+    src: local("Circe ExtraBold"), local("fonts/Circe-ExtraBold"), url("fonts/Circe-ExtraBold.eot?#iefix") format("embedded-opentype"), url("fonts/Circe-ExtraBold.woff") format("woff"), url("fonts/Circe-ExtraBold.ttf") format("truetype");
+    font-weight: 800;
+    font-style: normal;
+}
+
+@keyframes pulse {
+    0% {
+        -ms-transform: scale(1);
+        -webkit-transform: scale(1);
+        -o-transform: scale(1);
+        -moz-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -ms-transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        -o-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    100% {
+        -ms-transform: scale(1);
+        -webkit-transform: scale(1);
+        -o-transform: scale(1);
+        -moz-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Circe;
+    font-weight: normal;
+    color: #fff;
+}
+
+body {
+    position: relative;
+    background: url("images/street_bg-min.jpg") center top no-repeat;
+    background-size: cover;
+    padding-bottom: 70px;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 37px;
+    margin-top: 50px;
+    line-height: 1.1;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width: 1024px) {
+    h1 {
+        font-size: 37px;
+    }
+}
+
+@media screen and (max-width: 786px) {
+    h1 {
+        font-size: 24px;
+    }
+}
+
+h2 {
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 23px;
+    text-align: center;
+    line-height: 1.2;
+    margin-top: 30px;
+}
+
+.logo {
+    text-align: center;
+    width: 55vw;
+    max-width: 80vw;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 1599px) {
+    .logo {
+        width: 48vw;
+        max-width: 60vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .logo {
+        width: 90vw;
+        max-width: 90vw;
+    }
+}
+
+.logo img {
+    width: 100%;
+}
+
+.tab_series {
+    text-transform: uppercase;
+    font-size: 21px;
+    font-weight: 600;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+.play-tizer {
+    text-align: center;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    margin-top: -10vw;
+}
+
+.play-tizer img {
+    width: 45px;
+    margin-bottom: 10px;
+    position: absolute;
+}
+
+.play-tizer span {
+    font-size: 21px;
+    display: block;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-top: 65px;
+}
+
+@media screen and (max-width: 1024px) {
+    .play-tizer span {
+        font-size: 18px;
+    }
+}
+
+.play-tizer:hover {
+    cursor: pointer;
+}
+
+.play-tizer:hover img {
+    animation: pulse 3s infinite;
+}
+
+.content {
+    width: 80vw;
+    left: 10vw;
+    position: relative;
+}
+
+.description {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.5;
+    width: 80%;
+    max-width: 800px;
+    margin: 50px auto 0;
+}
+
+@media screen and (max-width: 768px) {
+    .description {
+        font-size: 22px;
+        line-height: 1.3;
+    }
+}
+
+.carousel {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.carousel__item {
+    width: 23%;
+    margin: 0 1%;
+}
+
+@media screen and (max-width: 1279px) {
+    .carousel__item {
+        width: 31%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .carousel__item {
+        width: 48%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .carousel__item {
+        width: 100%;
+    }
+}
+
+.carousel__item .preview {
+    position: relative;
+}
+
+.carousel__item .preview img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.carousel__item .preview .gray-over {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+
+.carousel__item .play-button {
+    width: 45px;
+    position: absolute;
+    top: calc(50% - 22px);
+    left: calc(50% - 22px);
+    transition: all .1s;
+}
+
+.carousel__item .play-button img {
+    width: 100%;
+    opacity: 0.5;
+}
+
+.carousel__item .series-title {
+    display: none;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 19px;
+    line-height: 1.1;
+}
+
+.carousel__item .series-description {
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.carousel__item .series-description .series-num {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 18px;
+    float: left;
+    margin-right: 15px;
+}
+
+.carousel__item .series-description .series-duration {
+    font-size: 18px;
+}
+
+.slick-slide {
+    margin: 0 10px;
+}
+
+.carousel__item:hover {
+    cursor: pointer;
+}
+
+.carousel__item:hover .gray-over {
+    display: block;
+}
+
+.carousel__item:hover .series-title {
+    display: block;
+}
+
+.carousel__item:hover .play-button {
+    opacity: 0;
+}
+
+.carousel__item img {
+    border-radius: 5px;
+}
+
+.slick-prev {
+    background: url(images/prev-arrow.png);
+}
+
+.slick-arrow {
+    display: inline-block;
+    position: absolute;
+    width: 20px;
+    height: 50px;
+    top: calc(50% - 26px);
+    left: -30px;
+}
+
+.slick-arrow img {
+    width: 100%;
+    height: 100%;
+}
+
+.slick-arrow.next-arrow {
+    float: right;
+    right: -30px !important;
+    left: auto;
+}
+
+.slick-arrow:hover {
+    cursor: pointer;
+}
+
+.add_grid {
+    background: #fff;
+    display: inline-block;
+    border-radius: 4px;
+    color: #3a5094;
+    padding: 5px 12px 3px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.add_grid:hover {
+    cursor: pointer;
+}
+
+.iframe-tizer {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+.iframe-tizer iframe {
+    width: 95%;
+    height: 90%;
+}
+
+.close-tizer {
+    position: absolute;
+    top: 1%;
+    right: 2%;
+    font-size: 30px;
+    line-height: 1;
+    z-index: 10;
+}
+
+.close-tizer:hover {
+    cursor: pointer;
+}
+
+.rutube-soc {
+    padding-left: 10px;
+    padding-top: 8px;
+    display: inline-block;
+}
+
+.rutube-logo {
+    width: 80px;
+}
+
+.rutube-logo:hover {
+    cursor: pointer;
+}
+
+.round-soc {
+    float: left;
+    border-radius: 100%;
+    margin: 0px 6px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.round-soc span {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.round-soc:hover {
+    cursor: pointer;
+}
+
+.icons-soc {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.vk {
+    background: #4c75a3;
+}
+
+.ok {
+    background: #ee7c02;
+}
+
+.fb {
+    background: #385396;
+}
+
+.ins {
+    background: #cb317a;
+}
+
+.youtube {
+    background: #f50001;
+}
+
+/* Tabs */
+.tab-content {
+    display: none !important;
+}
+
+.tab-content.current {
+    display: block !important;
+}
+
+.tabs {
+    padding-left: 0px;
+}
+
+.tab-link {
+    display: inline-block;
+    list-style: none;
+    margin-right: 20px;
+}
+
+.tab-link:hover {
+    cursor: pointer;
+}
+
+.tab-link.current {
+    text-decoration: underline;
+}
+
+/*# sourceMappingURL=style.css.map */
